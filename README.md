@@ -52,37 +52,7 @@ Task - 4: Login Authentication System
 
   -> Sign Out: The logout functionality clears the active user session and returns the user to the authentication interface.
 
- ->Authentication Flow:
-
-        Start
-          │
-          ▼
-     Authentication
-       Page
-      /       \
-     ▼         ▼
- Sign Up     Sign In
-     │         │
-     ▼         ▼
- Validate    Validate
-   Data      Credentials
-     │         │
-     ▼         ▼
-Create User   Success?
-     │        /     \
-     │      Yes      No
-     │       │        │
-     └──────►▼        ▼
-        Secured     Error
-         Portal     Message
-           │
-           ▼
-         Logout
-           │
-           ▼
-    Authentication Page
-
- ->Session Management:
+  ->Session Management:
 
  - The application uses browser "localStorage" to maintain user and session information.
 
@@ -95,7 +65,7 @@ Create User   Success?
  ->Password Security:
 
  - The project demonstrates the concept of avoiding direct plain-text password storage through password hashing.
- - However, because this is a front-end internship project, it should not be considered production-grade authentication. Real applications should perform password hashing and authentication on a secure backend.
+ - However, because this is a front-end internship project, it should not be considered production-grade authentication. Real applications should perform password    hashing and authentication on a secure backend.
 
  ->Learning Outcomes
 
@@ -110,19 +80,6 @@ Create User   Success?
  - Displaying dynamic error and success messages
  - Using HTML accessibility attributes
  - Understanding basic password security concepts
-
- -> How to Run
- 1. Clone the repository: git clone https://github.com/your-username/your-repository-name.git
- 2. Open the project folder.
- 3. Make sure all three files are present:
-      index.html
-      style.css
-      script.js
-
- 4. Open "index.html" in a modern web browser.
- 5. Create an account using the Sign Up option.
- 6. Sign in using your registered credentials.
- 7. After successful login, access the secured portal and test the Sign Out functionality.
 
 
  ->Future Improvements:
